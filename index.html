@@ -4,13 +4,56 @@
 <title>
 </title>
 
-<link rel= "stylesheet"  type = "text/css"  href= "headercss.css">  
+<link rel= "stylesheet"  type = "text/css"  href= "headernew.css">  
+
+<style type ="text/css">
+
+    #my_canvas{background:#CCC ; border:#000 1px solid; }
+    
+</style>
+
+<script> 
+
+function initCanvas()
+{   var ctx= document.getElementById('my_canvas').getContext('2d'); 
+    var  cW= ctx.canvas.width , cH= ctx.canvas.height;
+    var y = 0, x = 0;
+function animate()
+{
+  ctx.save();
+  ctx.clearRect(0,0,cW,cH);
+
+ctx.fillStyle = "magenta";
+ctx.fillRect(0,y,200,200);
+
+ctx.fillStyle = "blue";
+ctx.fillRect(x,0,200,200);
+
+
+ctx.fillStyle = "green";
+ctx.fillRect(x+10,y+10,200,200);
+
+y++;  x++;
+ctx.restore();
+if (x==600 )
+    {x= 0; y=0;}
+
+
+}
+
+var animateinterval = setInterval(animate, 30);
+}
+
+window.addEventListener('load', function(event) { initCanvas(); });
+
+
+
+</script>   
 
 
 </head>
 
-<body bgcolor= "yellow">
-
+<body bgcolor= "yellow" text="blue">
  
 
  <div class = "header"> 
@@ -24,7 +67,7 @@
      	<ul>
      	 <li>  <a href="http://darshannegi.blogspot.com/" target="_blank"> <b>My <br>Blog </b> </a> </li>
      	 <li> <a href="https://www.youtube.com/channel/UCJltxyHE3K5sWwODOLuebag?view_as=subscriber" target="_blank"> <b>My Youtube<br> channel </b></a>  </li>
-     	 <li>  <a href="site2000.html" target="_blank"><b> word<br>page </b></a>  </li>
+     	 <li>  <a href="site2000.html" target="_blank"><b> Nil<br>page </b></a>  </li>
      	 
      	</ul>
     </button>
@@ -33,9 +76,9 @@
 
      <div class="centre">  
 
-          <div id="image1">   <image src="Virtual.png" width= 400 height= 400> </style>           </div>  
+          <div id="image1">   <image src="virtual2.png" width= 400 height= 400> </style>           </div>  
 
-     	<font size=20>  <h1 style ="color:blue; padding:10 0;"> VIRTUAL WORD Online Coaching</h1> </font> 
+     	<font size=20>  <h1 style ="color:blue; padding:10 0;"> VIRTUAL WORLD Online Coaching</h1> </font> 
 
 
  
@@ -47,19 +90,32 @@
 
      <div class="image&text">
 
+
+        <div>
+            
+            <canvas id="my_canvas" width ="700" height="700">    </canvas>
+
+
+    
+         </div>
+
+
         <div   class= "backimg">        </div>
 
+<br> <br><br> <br><br><br><br>
 
-    <br><br> <br><br> <br><br>
+<div><center> <img src="photo2 advertise.png" class = "blink_add"> </center> </div>
+
+    <br><br> <br>
     <div class  = "image_animate"> 
         <img src="BABY.png">
     </div>
 
     <div class = "P&Student"> 
 
-            
-    <p id="p1"> <b>  Welcome to my site. This site is active. More to Follow:  Welcome to my site. This site is active. More to Follow: Welcome to my site. This site is active. More to Follow: Welcome to my site. This site is active. More to Follow: Welcome to my site. This site is active. More to Follow: Welcome to my site. This site is active. More to Follow: Welcome to my site. This site is active. More to Follow: Welcome to my site. This site is active. More to Follow: Welcome to my site. This site is active. More to Follow: Welcome to my site. This site is active. More to Follow: Welcome to my site. This site is active. More to Follow: Welcome to my site. This site is active. More to Follow: Welcome to my site. This site is active. More to Follow: Welcome to my site. This site is active. More to Follow: Welcome to my site. This site is active. More to Follow: Welcome to my site. This site is active. More to Follow: Welcome to my site. This site is active. More to Follow: </b> </p>
-
+         
+    <p id="p1">    <b> <u>My E-books are available in Amazon : <br> (Click on the following links) </u> <br> <br> <a href= "https://www.amazon.in/dp/B08B1RDPZS"> C++ for Beginners </a>  <br><br> <a href=" https://www.amazon.in/dp/B08B578K9W"> C++  & Python </a>  <br><br>    <a href="https://www.amazon.in/dp/B08BY1RT95">  Learn C++ & Java </a> <br> <br> <a href="https://www.amazon.in/dp/B08BW7WLFH"> Fight Corona with increased immunity  </a> <br><br>  <a href="https://www.amazon.in/dp/B08FHCRMZW"> Program Logic & Design All in One with C++, Java &  Python. </a> </b>   </p>
+    
 
 
 
@@ -75,7 +131,7 @@
             <label>Phone number: </label> <br>
             <input type="text" name="mobile"> <br><br>
 
-             <label>How do u want to study(Alone/Group) <br> Also mention class & subject.  </label> <br>
+             <label>How do u want to study? Gr1(Alone) : Gr2(2-4 students) : Gr3(15-30 students) <br> Please mention Group, class & subject.  </label> <br>
             <textarea name="inputField" cols=30  rows=3> </textarea>  <br>
  
             <input type="submit" name="submit" value="submit">
@@ -86,7 +142,7 @@
         </div>
         
         <div class = "video_show"> 
-            <video controls width="400" height="267" autoplay muted loop>
+            <video controls width="550" height="267" autoplay muted loop>
                 <source src="immunity.mp4" type="video/mp4" >
             </video>
          </div>  
@@ -95,12 +151,19 @@
 
 </div>
 
-
+<br><br><br><br><br><br><br><br><br><br><br>
 <br> <br>
+<h3>click here </h3>
+<details>
 
-
+<summary> <h1> Copyright 2018-2028  </h1> </summary> 
+ <h1>
+<p> By DARSHAN NEGI :  All Right Reserved </p>
+<p>  My Blog: Darshannegi.blogspot.com  ;  My Youtube channel: darshan negi vlogs </p>
+</h1>
+</details>
+<br><br><br><br><br><br>
 </body>
-
 
 
 </html>
