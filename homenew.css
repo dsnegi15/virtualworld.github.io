@@ -1,0 +1,205 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.header{
+	width: 100%;
+	height:80px;
+	
+	/*background-color: black;  */
+	
+}
+
+
+
+.logo{
+	width: 30%;
+	line-height: 80px;
+	text-align: center;
+	background-color: orange;
+	float: left;
+
+}
+ 
+
+.centre{
+	width: 40%;
+	height: 80px;
+	text-align: center; 
+	 
+	padding-top: 10px;   
+	float: right;  
+	text-shadow: 20px 20px 10px white;
+
+}   
+
+
+
+.menu{
+	width: 30%;
+	height: 80px;
+
+	text-align: center;
+	float:  right;  
+	
+    }
+
+
+ul{
+	list-style: none;
+/*	text-align: right; */
+ 
+	
+}
+
+
+li{ 
+	display: inline-table;
+	text-align: center;
+	/*border: 2px solid black;  */
+	padding: 10px 10px ;
+ 
+}
+
+
+a{   color: blue;
+	text-align: bottom;
+}
+
+
+.image&text{
+	width: 100%;
+	height: 100vh;
+
+}
+
+
+.backimg
+{  	width: 45%;
+	height: 100vh;
+	background-image: url('self.png');
+
+	background-position: left;
+	background-attachment: fixed;
+	background-repeat: repeat-x;
+	background-size: 50% 100%;
+
+
+}  
+
+
+
+.blink_add
+{  width: 50%; height: 50%;
+transition-property: width, height ;
+transition-duration: 1s;
+transition-timing-function: linear;
+
+}  
+.blink_add:hover {
+	width: 100%; height: 100%;
+
+}
+
+#my_canvas {
+
+width: 35%;
+	height: 100vh;
+	float :right;
+ 	background-repeat: no-repeat;
+	
+	}
+
+.image_animate{
+	width: 100% ; height: 100px ; background-color: green; position: relative;
+}
+
+.image_animate img {
+	width: 140px ; height: 120px;
+	left: 0; top: -15px;
+	position: absolute;
+	animation-name: circlebhag;
+	animation-duration: 6s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes circlebhag{
+from {left: 0 }
+to{left: 85% }
+
+}
+
+
+.image_animate1{
+	width: 100% ; height: 150px ; background-color: green; position: relative;
+}
+
+
+.image_animate1 img {
+	width: 140px ; height: 170px;
+	right: 0; top: -15px;
+	position: absolute;
+	animation-name: circlebhag1;
+	animation-duration: 6s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+}
+
+
+@keyframes circlebhag1{
+from {right: 0 }
+to{right: 85% }
+
+}
+
+
+.P&Student{
+
+	width: 100%;
+	height:50%;
+	background-color: black;
+
+}
+
+.video_show{
+
+	width: 100%;
+	height:50px;
+	 float: center;
+		 
+	
+}
+
+
+.student{
+		 	width: 20%;
+			height: 40%;
+			top : -15px;
+	 
+			text-align: center;
+			border: 2px solid black;
+			float:right;
+		 
+
+       } 
+
+
+#p1{    
+	width: 35%;
+	height: 40%;
+	color: red;
+	border:1px solid black;
+	overflow: scroll;
+     text-transform: uppercase;
+	 letter-spacing: 2px;
+	 word-spacing: 3px;
+	 text-align: center;
+	 float:left;
+
+
+}
