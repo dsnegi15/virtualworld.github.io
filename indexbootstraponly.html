@@ -238,16 +238,16 @@
         <img src = "java1.png"  class = "img-fluid" >
    </div>
 <div class = "col-lg-4 col-md-2  col-12 mb-4"> 
-        <img src = "5th.png"  class = "img-fluid">
+        <img src = "Language.png"  class = "img-fluid">
    </div>
 <div class = "col-lg-4 col-md-2  col-12 mb-4"> 
-        <img src = "coding & designing.png"  class = "img-fluid">
+        <img src = "web.png"  class = "img-fluid">
    </div>
 <div class = "col-lg-4 col-md-2  col-12 mb-4"> 
         <img src = "website.png"  class = "img-fluid">
    </div>
 <div class = "col-lg-4 col-md-2  col-12 mb-4"> 
-        <img src = "immunity1.png"  class = "img-fluid">
+        <img src = "coding & designing.png"  class = "img-fluid">
    </div>
 
  </div>
@@ -315,7 +315,46 @@
 
   <!--register ends  --->
 
-  <!----contact us starts 
+
+
+
+<section> 
+
+  <div class = "container-fluid"> 
+<h1 class = "text-center   text-capitalize pt-5">  My Ebooks </h1>
+<hr class = "w-25 mx-auto  pt-5">
+<div class ="row" mb-5> 
+   <div  class = "col-lg-6  col-md-6  col-12"> 
+     <img src="amazon.png" class = "img-fluid" >
+   </div>
+      <div  class = "col-lg-6  col-md-6  col-12"> 
+      <h1> My E-books are available in Amazon :   </h1>
+      <hr>
+      <p> 
+         
+    <p>    <b> <u>ebooks on C++, Java, Python , Program; Logic & Design & on Corona : <br> (Click on the following links) </u>  <br> <a href= "https://www.amazon.in/dp/B08B1RDPZS"> <br> C++ for Beginners </a>  <br> <br> <a href=" https://www.amazon.in/dp/B08B578K9W"> C++  & Python </a>  <br> <br>   <a href="https://www.amazon.in/dp/B08BY1RT95">  Learn C++ & Java </a> <br> <br> <a href="https://www.amazon.in/dp/B08BW7WLFH"> Fight Corona with increased immunity  </a> <br><br> <a href="https://www.amazon.in/dp/B08FHCRMZW"> Program Logic & Design All in One with C++, Java &  Python. </a>   </p>
+   
+
+        </p>
+
+        <button>  choose your e-book </button>
+
+      </div>
+
+</div>
+ </section>
+
+
+
+
+
+
+
+
+
+
+
+  <!----contact us starts    ---->
 
   <section>  
   <div class = "container mb-5"> 
@@ -324,22 +363,32 @@
 
 <div class = "w-50 mx-auto"> 
 
-<form action="/action_page.php">
+<form action ="mailto:dsnegi0606@gmail.com"  method="post" enctype="text/plain" onSubmit="return proceedSubmission">
   <div class="form-group">
     <label for="email">Your name:</label>
-    <input type="text" class="form-control" placeholder="Enter your name" id="email" autocomplete="off">
+    <input type="text" class="form-control" placeholder="Enter your name" name="name" autocomplete="off">
   </div>
   <div class="form-group">
     <label for="pwd">Email:</label>
-    <input type="email" class="form-control" placeholder="Enter your email" id="pwd">
+    <input type="email" class="form-control" placeholder="Enter your email" name="email">
   </div>
-   <div class="form-group">
+   <div class="form-group">  
     <label for="pwd">Mobile No.:</label>
-    <input type="number" class="form-control" placeholder="Enter your Mobile" id="pwd">
+    <input type="number" class="form-control" placeholder="Enter your Mobile" name="mobile">
   </div>
   <div class="form-group">
-    <label for="pwd">Text Area :</label>
-    <textarea class = "form-control">  </textarea>
+     <!----     indexboostraponly ka  apna code
+                 <label for="pwd">Text Area :</label>  
+                  <textarea class = "form-control">  </textarea>
+
+     -->
+
+
+             <label for="pwd">How do u want to study? Gr1(Alone) : Gr2(2-4 students) : <br>Gr3(10-20 students) : 
+                Please mention Group, class & subject.  </label> <br>
+            <textarea  class = "form-control" name="comment" cols=30  rows=3 > </textarea>  <br>
+
+
   </div>
 
   <div class="form-group form-check">
@@ -350,10 +399,31 @@
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
   </div>
-</div>
+
+
+
+
+
+<!---
+  
+         <div class="col-xs-6 col-sm-4"> 
+         
+    
+         
+    <p id="p1">    <b> <u>My E-books are available in Amazon : <br> (Click on the following links) </u> <br> <br> <a href= "https://www.amazon.in/dp/B08B1RDPZS"> C++ for Beginners </a>  <br><br> <a href=" https://www.amazon.in/dp/B08B578K9W"> C++  & Python </a>  <br><br>    <a href="https://www.amazon.in/dp/B08BY1RT95">  Learn C++ & Java </a> <br> <br> <a href="https://www.amazon.in/dp/B08BW7WLFH"> Fight Corona with increased immunity  </a> <br><br>  <a href="https://www.amazon.in/dp/B08FHCRMZW"> Program Logic & Design All in One with C++, Java &  Python. </a> </b>   </p>
+   </div>  </div>
+
+   ------>
+
+
 </section>
 
- Contact us ends here----->
+
+
+
+
+
+ <!---Contact us ends here----->
 
 
 <!----- footer      --->
@@ -362,7 +432,7 @@
 
 
 <footer> 
-<p class = "text-center bg-dark  text-white"> @Copyright 2020  </p>
+<h5 class = "text-center bg-danger  text-white"> @Copyright 2020  </h5>
 
 
 </footer>
