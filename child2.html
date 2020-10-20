@@ -11,12 +11,33 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
    
 <style type ="text/css">
 
     #my_canvas{background:#CCC ; border:#000 1px solid; }
     
 </style>
+
+  <style>
+  body {
+    position: relative;
+  }
+  ul.nav-pills {
+    top: 20px;
+    position: fixed;
+  }
+  div.col-8 div {
+    height: 500px;
+  }
+  </style>
 
 <script> 
 
@@ -68,12 +89,48 @@ window.addEventListener('load', function(event) { initCanvas(); });
 
 <header> 
 
-  
+
 
 <div class="d-flex p-4 bg-success text-white">  
        <div class="p-3 bg-danger"> <a  href="index.html">    <font color="white"> Home page </font></a>  </div>
-       <div class="p-3 bg-warning"> <a  href="indexbootstraponly.html">    <font color="white"> Go back  </font></a>  </div>
+       <div class="p-3 bg-primary"> <a  href="indexbootstraponly.html">    <font color="white"> Go back  </font></a>  </div>
+
+        <div class="p-3 bg-danger"> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Dropdown Coding Menu
+    </button>
+    <div class="dropdown-menu">
+
+    	  <!-- ADD PATH OF JAVA, PYTHON , HTML CODING IN YOUTUBE --->
+
+      
+      <a class="dropdown-item" href="https://www.youtube.com/watch?v=lZHzCZQB1Bk">Java Codes</a>
+      <a class="dropdown-item" href="https://www.youtube.com/watch?v=cxqrPeEvwRs">Python Codes</a>
+      <a class="dropdown-item" href="https://www.youtube.com/watch?v=Gz9x684Qmyg">Javascript Codes</a>
+      <a class="dropdown-item" href="https://www.youtube.com/playlist?list=PLfV5ikhJgnVTj8T4vTihvmPaM584c1zqT">Logic & Design</a>
+      <a class="dropdown-item" href="https://www.youtube.com/watch?v=v5aexHxrkGw">Html Codes</a>
+      <a class="dropdown-item" href="https://www.youtube.com/watch?v=DzK0Tsz1e4M&list=PLfV5ikhJgnVRlRWzwQjq9N4pAjWE9v7ee&index=1">
+      Vedic Maths Easy multiplication</a>
+    </div>
+  </div> 
 </div>
+
+
+       <!--- Following is a drop down menu -->
+<!---- <div class="container mt-3">    
+
+  <div class="dropdown p-3">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a>
+      <a class="dropdown-item" href="#">Link 2</a>
+      <a class="dropdown-item" href="#">Link 3</a>
+    </div>
+  </div>
+</div>
+
+          </div>   --->
 
 
 
@@ -201,7 +258,7 @@ window.addEventListener('load', function(event) { initCanvas(); });
           This is children's section. <br><br><br><br><br><br><br><br>   It is under development <br><br><br></h3>
       
 
-        <button>  know us </button>
+        <button class ="btn btn-primary p-2">  know us </button>
 
       </div>
 
@@ -214,11 +271,11 @@ window.addEventListener('load', function(event) { initCanvas(); });
 <div class="container-fluid">
   
   <div class="row mb-2">
-    <div class="col bg-success">Will</div>
-    <div class="col bg-warning">you </div>
-    <div class="col bg-success">appreciate</div>
-    <div class="col bg-warning">the </div>
-    <div class="col bg-primary">effects</div>
+    <div class="col bg-success p-3 text-center font-weight-bold m-3 ">Will</div>
+    <div class="col bg-warning p-3 text-center font-weight-bold m-3 ">you </div>
+    <div class="col bg-success p-3 text-center font-weight-bold m-3">appreciate</div>
+    <div class="col bg-warning p-3 text-center font-weight-bold m-3 ">the </div>
+    <div class="col bg-primary p-3 text-center font-weight-bold m-3 ">effects</div>
   </div>
 </div>
 
@@ -421,6 +478,35 @@ window.addEventListener('load', function(event) { initCanvas(); });
 </section>
 
 
+   
+       <!--- Following is a drop down menu  
+
+<div class="container mt-3">
+  <h2>Dropdown Events</h2>
+  <p>Click on the Dropdown button below. <strong>event.relatedTarget</strong> returns the element which triggered the dropdown.</p>  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a>
+      <a class="dropdown-item" href="#">Link 2</a>
+      <a class="dropdown-item" href="#">Link 3</a>
+    </div>
+  </div>
+</div>
+
+</div>       --->
+
+
+<script>
+$(document).ready(function(){
+  $(".dropdown").on("show.bs.dropdown", function(event){
+    var x = $(event.relatedTarget).text(); // Get the button text
+    alert("You clicked on: " + x);
+  });
+});
+</script>
+<br><br><br><br><br><br>
 
  <footer> 
   
