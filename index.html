@@ -9,6 +9,17 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+
+
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
     <style>
   /* Make the image fully responsive */
   .carousel-inner img {
@@ -71,14 +82,49 @@ window.addEventListener('load', function(event) { initCanvas(); });
  
 <h1 class = "text-center text-warning text-capitalize font-weight-bold bg-primary display-4"> Darshan Negi Site  </h1>
 
-
+<!--- Earlier menu starts 
 <div class="d-flex p-4 bg-success text-white">  
     
     <div class="p-3 bg-info"><a  href="http://darshannegi.blogspot.com/" target="_blank"><font color="white">   My Blog </font></a></div>
     <div class="p-3 bg-danger"> <a  href="https://www.youtube.com/channel/UCJltxyHE3K5sWwODOLuebag?view_as=subscriber" target="_blank">    <font color="white">   My youtube   <br>channel  </font></a>  </div>
-    <div class="p-3 bg-primary"> <a  href="indexbootstraponly.html"> <font color="white"> more<br>details  </font></a>   </div>
+    <div class="p-3 bg-primary"> <a  href="indexbootstraponly.html"> <font color="white">other <br> details  </font></a>   </div>
 
   </div>
+
+------------ earlier menu ends ----------->
+
+<!---- It is for drop down menu terial     ------>
+
+<section>
+
+
+<div class="d-flex p-4 bg-success text-white">  
+       <div class="p-3 bg-danger"> <a  href="http://darshannegi.blogspot.com/" target="_blank">    <font color="white"> My Blog</font></a>  </div>
+       <div class="p-3 bg-primary"> <a  href="https://www.youtube.com/channel/UCJltxyHE3K5sWwODOLuebag?view_as=subscriber" target="_blank">    <font color="white">  My youtube   <br>channel  </font></a>  </div>
+
+        <div class="p-3 bg-danger"> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <a href="#" data-toggle="tooltip" data-placement="top" title="click for other website details"><font color=white> Menu options </font>
+      </a> 
+    </button>
+    <div class="dropdown-menu">
+
+        <!-- ADD PATH OF JAVA, PYTHON , HTML CODING IN YOUTUBE --->
+
+      
+      <a class="dropdown-item text-white text-white bg-success bg-primary" href="indexbootstraponly.html">Ebooks </a>
+      <a class="dropdown-item text-white text-white bg-primary bg-primary" href="indexbootstraponly.html"> Join  </a>
+      <a class="dropdown-item text-white bg-danger" href="about.html">About us </a>
+      <a class="dropdown-item text-white bg-warning" href="child2.html">Children page </a>
+      <a class="dropdown-item text-white bg-primary" href="child2.html">Coding & Vedic Maths </a>
+
+    </div>
+  </div> 
+</div>
+
+</section>   <!----  drop down menu trial ends here ---->
+
+
+
 
 
 
@@ -190,6 +236,22 @@ window.addEventListener('load', function(event) { initCanvas(); });
 
 
 
+
+<script>
+$(document).ready(function(){
+  $(".dropdown").on("show.bs.dropdown", function(event){
+    var x = $(event.relatedTarget).text(); // Get the button text
+    alert("You clicked on: " + x);
+  });
+});
+</script>
+
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
 
  
 <script> 
