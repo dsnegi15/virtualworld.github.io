@@ -1,298 +1,91 @@
 <!DOCTYPE html>
 <html>
- 
-<head> 
-
-<link rel= "stylesheet"  type = "text/css"  href= "homenew.css">  
- <link rel ="stylesheet" href="bootstrap.min"> 
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-
-     <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-
-    <style>
-  /* Make the image fully responsive */
-  .carousel-inner img {
-    width: 100%;
-    height: 100%;
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<style>
+.w3-tangerine {
+  font-family: "Tangerine", serif;
   }
-  </style> 
-
-
-
-<style type ="text/css">
-
-    #my_canvas{background:#CCC ; border:#000 1px solid; }
-    
+  h1 {font-size: 100px;}
+  h2 {font-size: 40px;}
+  h3 {font-size: 30px;}
 </style>
-
-<script> 
-
-function initCanvas()
-{   var ctx= document.getElementById('my_canvas').getContext('2d'); 
-    var  cW= ctx.canvas.width , cH= ctx.canvas.height;
-    var y = 0, x = 0;
-function animate()
-{
-  ctx.save();
-  ctx.clearRect(0,0,cW,cH);
-
-ctx.fillStyle = "magenta";
-ctx.fillRect(0,y,200,200);
-
-ctx.fillStyle = "blue";
-ctx.fillRect(x,0,200,200);
-
-
-ctx.fillStyle = "green";
-ctx.fillRect(x+10,y+10,200,200);
-
-y++;  x++;
-ctx.restore();
-if (x==600 )
-    {x= 0; y=0;}
-
-
-}
-
-var animateinterval = setInterval(animate, 30);
-}
-
-window.addEventListener('load', function(event) { initCanvas(); });
-
-
-
-</script>   
-
-
- </head>
-
 <body>
 
+<div class="w3-sidebar w3-bar-block w3-green w3-xxlarge" style="width:70px">
+  
+  <a href="mainpage.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i></a> 
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-stack-exchange"></i> </a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-stack-exchange" style="color:red"></i> </a> 
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-stack-exchange" style="color:blue"></i> </a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-stack-exchange" style="color:purple"></i> </a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-stack-exchange" style="color:black"></i> </a> 
+  <a href="#" class="w3-bar-item w3-button"><i class='fa fa-star' style='color:red'></i> </a>
+  <a href="#" class="w3-bar-item w3-button"><i class='fa fa-star' style='color:purple'></i> </a>
+  <a href="#" class="w3-bar-item w3-button"><i class='fa fa-star' style='color:blue'></i> </a>
  
-<h1 class = "text-center text-warning text-capitalize font-weight-bold bg-primary display-2"> Darshan Negi Site  </h1>
-
-
-
-<section>
-
-
-<div class="d-flex flex-wrap  p-4 bg-success  text-white text-center">  
-     <div class="p-3 bg-danger flex-fill"> <a  href="http://darshannegi.blogspot.com/" target="_blank">    <font color="white"> My Blog</font></a>  </div>
-     <div class="p-3 bg-primary flex-fill"> <a  href="https://www.youtube.com/channel/UCJltxyHE3K5sWwODOLuebag?view_as=subscriber" target="_blank">    <font color="white">  My youtube   <br>channel  </font></a>  </div>
-
-        <div class="p-2 bg-danger  font-weight-bold flex-fill flex-grow-1"> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-      <a href="#" data-toggle="tooltip" data-placement="top" title="click for other website details"><font color=white> All <br>Options </font>
-      </a> 
-    </button>
-    <div class="dropdown-menu">
-
-        <!-- ADD PATH OF JAVA, PYTHON , HTML CODING IN YOUTUBE --->
-
-      
-      <a class="dropdown-item text-white text-white bg-success bg-primary" href="indexbootstraponly.html">Ebooks for Coding </a>
-      <a class="dropdown-item text-white text-white bg-primary bg-primary" href="indexbootstraponly.html"> Join Virtual World </a>
-        <a class="dropdown-item text-white bg-warning" href="child2.html">Children page </a>
-      <a class="dropdown-item text-white bg-primary" href="child2.html">Coding & Vedic Maths </a>
-       <a class="dropdown-item text-white bg-success" href="health.html"> Health & Hygiene  </a>
-        <a class="dropdown-item text-white bg-warning" href="dharm.html">Dharm-Karm </a>
-
-       <a class="dropdown-item text-white bg-danger" href="about.html">About us </a>
-       
-
-    </div>
-  </div> 
-
-
-   <div class="p-2 bg-danger flex-fill"> <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-      <a href="#" data-toggle="tooltip" data-placement="top" title="click for home page details"><font color=white > Home <br> Menu </font>
-      </a> 
-    </button>
-    <div class="dropdown-menu">
-
-        <!-- ADD PATH OF JAVA, PYTHON , HTML CODING IN YOUTUBE --->
-
-      
-      <a class="dropdown-item text-white text-white bg-success bg-primary" href="#Education Unlimited">Education Unlimited </a>
-      <a class="dropdown-item text-white text-white bg-primary bg-primary" href="#Contact"> Contact us </a>
-        <a class="dropdown-item text-white bg-warning" href=" "  data-toggle="tooltip"  title="This site is continuously updated."> Updates  </a>
-      <a class="dropdown-item text-white bg-primary" href=" ">  </a>
-      
-
-    </div>
-  </div> 
-
-
- <div class="p-3 bg-danger flex-fill"> <a  href="health.html">    <font color="white"> Health &  <br> Hygiene</font></a>  </div>
- <div class="p-3 bg-dark  flex-grow-1 flex-fill"> <a  href="indexbootstraponly.html">    <font color="white"> My <br>Ebooks </font></a>  </div>
  
- <div class="p-3 bg-danger flex-fill"> <a  href="social.html">    <font color="white"> Social <br> Awareness</font></a>  </div>
- <div class="p-3 bg-info flex-fill"> <a  href="website.html">    <font color="white"> Build <br> Website</font></a>  </div>
-  <div class="p-3 bg-danger flex-fill flex-grow-1"> <a  href="child2.html">    <font color="white"> Children  <br> Page</font></a>  </div>
- <div class="p-3 bg-primary flex-fill"> <a  href="indexbootstraponly.html">    <font color="white"> Join Virtual <br> World</font></a>  </div>
- <div class="p-3 bg-danger flex-fill flex-grow-1"> <a  href="dharm.html">    <font color="white"> Duty &  <br> devotion</font></a>  </div>
+</div>
+
+<div style="margin-left:70px">
+
+
+
+<div class="w3-panel w3-red w3-display-container w3-tangerine w3-mobile w3-center">
+  <span onclick="this.parentElement.style.display='none'"
+  class="w3-button w3-red w3-large w3-display-topright">x</span>
+<h1 class="w3-center"> Virtual World Online Coaching</h1>
+<p class="w3-jumbo w3-center">anytime anywhere 24/7</p>
 </div>
 
 
 
-</section>   <!----  drop down menu trial ends here ---->
 
-
-
-
-<section>  
-  <div class = "container bg-warning  text-white mb-5"> 
-    
-<h1 class = "display-4 text-center text-success text-capitalize font-weight-bold pt-5 ">
-
-<font>
- VIRTUAL WORLD ONLINE COACHING  </font>  </h1>  
-
-
-
-<div class = "row m-4" > 
-   
-    <div class = "col-lg-4 col-md-2  col-12 mb-4"> 
-        <img src = "all.png"  class = "img-fluid">
-   </div>
-
- 
-   <div class = "col-lg-4 col-md-2  col-12 mb-4"> 
-        <img src = "Logo11.png"  class = "img-fluid">
-   </div>
-
-     <div class = "col-lg-4 col-md-2  col-12 mb-4"> 
-        <img src = "virtual2.png"  class = "img-fluid">
-   </div>
-
-
- </div>
-</div>
- 
-</section>
-
-
-<a id="Education Unlimited" class="p-3 display-4">   </a>
-
-
-<section>  
-  <div class = "container bg-danger  text-white mb-5"> 
-    
-<h1 class = "display-3 text-center text-white text-capitalize font-weight-bold pt-5 ">
-
-<font>
- EDUCATION UNLIMITED   </font>  </h1>  
-
-<hr class = "w-25 mx-auto  pt-3">
-
-<div class = "row" > 
-   
-    <div class = "col-lg-4 col-md-2  col-12 mb-4"> 
-        <img src = "coding.png"  class = "img-fluid">
-   </div>
-
- 
-   <div class = "col-lg-4 col-md-2  col-12 mb-4"> 
-        <img src = "Language1.png"  class = "img-fluid">
-   </div>
-
-     <div class = "col-lg-4 col-md-2  col-12 mb-4"> 
-        <img src = "Vedic.png"  class = "img-fluid">
-   </div>
-
-
- </div>
-</div>
- 
-</section>
-
-
-
-
-<a id="Contact" class="p-3 display-4">   </a>
-
-
-
- <section class = "bg-success  text-white mb-5"> 
-<article class = "py-5  text-center"> 
-    <div>  Contact us:
-        <h3 class = "text-capitalize font-weight-bold display-2"> Virtual World  </h3>
-        <h3 class = "display-4"> +91 8076292548  </h3>
-        <p>   whatsapp No.- 9810924939  <br> email: virtualworld0606@gmail.com  </p>
-       
-        <button class="btn btn-warning"> Contact now  </button>  
-     </div>
- </article>
-  </section>
-
-
-
-
- <section class = "bg-primary"> 
-<article class = "py-5" > 
-    <div class = "text-center text-white">  
-        <h3 class = "display-4"> Want to Join!   </h3>
-        <p> Be a part of Virtual World group   </p>
-      <button class="btn btn-warning" data-toggle="modal" data-target="#myModal"> Join now  </button>  
-     </div>
-</article>
-
-</section>
-
-
-
-
-<br><br>
-
-
-<footer> 
-<h4 class = "text-center bg-danger  text-white"> @Copyright 2020  </h4>
-
-</footer>
-
-
-
-
-<script>
-$(document).ready(function(){
-  $(".dropdown").on("show.bs.dropdown", function(event){
-    var x = $(event.relatedTarget).text(); // Get the button text
-    alert("You clicked on: " + x);
-  });
-});
-</script>
-
-
-<script>
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();   
-});
-</script>
-
- 
-<script> 
- 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-
-</script>   
+<!--- card starts here   ---->
 
   
 
+<div class="w3-container   w3-padding-large w3-center w3-mobile">
+  <h1>Home page </h1>
+
+  <div class="w3-card-4 " style="width:100%">
+    <header class="w3-container w3-light-grey w3-center">
+      <h2 class="w3-center w3-tangerine">Darshan Negi site</h2>
+    </header>
+    <div class="w3-container">
+      
+      <img src="all.png" alt="Avatar" class="w3-left  w3-margin-right" style="width:50%">
+      <h2>Anytime, anywhere 24/7 with the safety of your home. Virtual world provides you skillfull coaching at your doorstep. We believe that talent is not limited to local area. Best talent may be anywhere in the world & in the age of internet it is available.      </h2><br><br>
+
+      <img src="builtsite.png" alt="Avatar" class="w3-left  w3-margin-right" style="width:50%">
+      <h3>Virtual World also provides website building platform for individuals, professionals & others. In this one social world platform; the whole world is one society. People use social sites viz. facebook, twitter etc. Why depend on Social sites only! Recognise yourself by building website for yourself. Invite people in your own site. Publicise your product, brand etc. </h3><br>
+    </div>
+    <br><br>
+    <button class="w3-button w3-block w3-dark-grey"><h4> Join us </h4> </button>
+  </div>
+</div>
+
+
+<!--- card ends  here   ---->
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+      
 </body>
-
- </html>
-
-
+</html>
